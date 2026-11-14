@@ -1,0 +1,1010 @@
+[
+  {
+    "image_id": "000009",
+    "product_id": "00002-3250",
+    "original_split": "cal",
+    "group_id": "00002-3250_g9",
+    "variant": "original",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000009\\original.jpg",
+    "image_sha256": "0c0907766f48ffb5851086d109a5ceb1a6a4087a71923bcc98c62acb5a6392e4",
+    "raw_response": {
+      "label": "Likely Genuine",
+      "p_value": 0.94636,
+      "anomaly_score": 37.040901,
+      "product_id": "00002-3250",
+      "best_similarity": 0.87698317,
+      "top5": [
+        "00002-3250",
+        "00591-0370",
+        "00378-6201",
+        "00555-0324",
+        "00093-3196"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-3250",
+          "similarity": 0.877
+        },
+        {
+          "product_id": "00591-0370",
+          "similarity": 0.862
+        },
+        {
+          "product_id": "00378-6201",
+          "similarity": 0.8544
+        },
+        {
+          "product_id": "00555-0324",
+          "similarity": 0.8538
+        },
+        {
+          "product_id": "00093-3196",
+          "similarity": 0.847
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 61.6723,
+        "glare": 0.0,
+        "mean_lum": 121.5404,
+        "dark": 0.002174,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000009",
+    "product_id": "00002-3250",
+    "original_split": "cal",
+    "group_id": "00002-3250_g9",
+    "variant": "imprint · severity 2",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000009\\imprint_s2.jpg",
+    "image_sha256": "44702bfa33b9b41702ee492698a5f2a3a31ffdf8fc5662ea24ea555ac02a93f2",
+    "raw_response": {
+      "label": "Likely Genuine",
+      "p_value": 0.896552,
+      "anomaly_score": 37.568329,
+      "product_id": "00002-3250",
+      "best_similarity": 0.87778711,
+      "top5": [
+        "00002-3250",
+        "00591-0370",
+        "00555-0324",
+        "00378-6201",
+        "00093-3196"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-3250",
+          "similarity": 0.8778
+        },
+        {
+          "product_id": "00591-0370",
+          "similarity": 0.86
+        },
+        {
+          "product_id": "00555-0324",
+          "similarity": 0.8531
+        },
+        {
+          "product_id": "00378-6201",
+          "similarity": 0.8478
+        },
+        {
+          "product_id": "00093-3196",
+          "similarity": 0.8456
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 62.0952,
+        "glare": 0.0,
+        "mean_lum": 121.5436,
+        "dark": 0.002174,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000009",
+    "product_id": "00002-3250",
+    "original_split": "cal",
+    "group_id": "00002-3250_g9",
+    "variant": "color_gloss · severity 3",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000009\\color_gloss_s3.jpg",
+    "image_sha256": "5cd5452f2a8dfa9a83d0cfb0c3b16d1ecca9e0a65ede61df3dfb77c8b10230d4",
+    "raw_response": {
+      "label": "Likely Genuine",
+      "p_value": 0.735632,
+      "anomaly_score": 38.617805,
+      "product_id": "00002-3250",
+      "best_similarity": 0.8577435,
+      "top5": [
+        "00002-3250",
+        "00555-0324",
+        "00378-6201",
+        "00591-0370",
+        "00093-7442"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-3250",
+          "similarity": 0.8577
+        },
+        {
+          "product_id": "00555-0324",
+          "similarity": 0.8452
+        },
+        {
+          "product_id": "00378-6201",
+          "similarity": 0.8353
+        },
+        {
+          "product_id": "00591-0370",
+          "similarity": 0.832
+        },
+        {
+          "product_id": "00093-7442",
+          "similarity": 0.8272
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 69.3836,
+        "glare": 0.0,
+        "mean_lum": 122.7098,
+        "dark": 0.001263,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000009",
+    "product_id": "00002-3250",
+    "original_split": "cal",
+    "group_id": "00002-3250_g9",
+    "variant": "edge_chip · severity 1",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000009\\edge_chip_s1.jpg",
+    "image_sha256": "680d4818f64e0b42e3732203220943af5fab1720b764fb26c05bc9593b1fdbb3",
+    "raw_response": {
+      "label": "Unknown Product",
+      "p_value": null,
+      "anomaly_score": null,
+      "product_id": "Unknown Product",
+      "best_similarity": 0.82704347,
+      "top5": [
+        "00002-3250",
+        "00591-0370",
+        "00555-0324",
+        "00378-6201",
+        "00093-3196"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-3250",
+          "similarity": 0.827
+        },
+        {
+          "product_id": "00591-0370",
+          "similarity": 0.813
+        },
+        {
+          "product_id": "00555-0324",
+          "similarity": 0.809
+        },
+        {
+          "product_id": "00378-6201",
+          "similarity": 0.8056
+        },
+        {
+          "product_id": "00093-3196",
+          "similarity": 0.7986
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 63.6549,
+        "glare": 0.0,
+        "mean_lum": 121.6496,
+        "dark": 0.002174,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000018",
+    "product_id": "00004-0260",
+    "original_split": "cal",
+    "group_id": "00004-0260_g18",
+    "variant": "original",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000018\\original.jpg",
+    "image_sha256": "1a3d3ed049c90253eb33cd34c0c158faf64122726f16a8de54b22444afa0398e",
+    "raw_response": {
+      "label": "Likely Genuine",
+      "p_value": 0.697318,
+      "anomaly_score": 38.903881,
+      "product_id": "00004-0260",
+      "best_similarity": 0.88566327,
+      "top5": [
+        "00004-0260",
+        "00093-1052",
+        "00007-4888",
+        "00093-7327",
+        "00087-2875"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00004-0260",
+          "similarity": 0.8857
+        },
+        {
+          "product_id": "00093-1052",
+          "similarity": 0.7811
+        },
+        {
+          "product_id": "00007-4888",
+          "similarity": 0.7732
+        },
+        {
+          "product_id": "00093-7327",
+          "similarity": 0.7724
+        },
+        {
+          "product_id": "00087-2875",
+          "similarity": 0.7667
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 92.8896,
+        "glare": 0.0,
+        "mean_lum": 121.1259,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000018",
+    "product_id": "00004-0260",
+    "original_split": "cal",
+    "group_id": "00004-0260_g18",
+    "variant": "imprint · severity 2",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000018\\imprint_s2.jpg",
+    "image_sha256": "f3a474a5ad7a0c46f51cd65068fe7915f96f30037d7ce2b14ccc6d00bbd10516",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.383142,
+      "anomaly_score": 40.527851,
+      "product_id": "00004-0260",
+      "best_similarity": 0.88512957,
+      "top5": [
+        "00004-0260",
+        "00093-1052",
+        "00007-4888",
+        "00093-7327",
+        "00087-2875"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00004-0260",
+          "similarity": 0.8851
+        },
+        {
+          "product_id": "00093-1052",
+          "similarity": 0.7768
+        },
+        {
+          "product_id": "00007-4888",
+          "similarity": 0.7728
+        },
+        {
+          "product_id": "00093-7327",
+          "similarity": 0.7709
+        },
+        {
+          "product_id": "00087-2875",
+          "similarity": 0.7705
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 89.9511,
+        "glare": 0.0,
+        "mean_lum": 121.1239,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000018",
+    "product_id": "00004-0260",
+    "original_split": "cal",
+    "group_id": "00004-0260_g18",
+    "variant": "color_gloss · severity 3",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000018\\color_gloss_s3.jpg",
+    "image_sha256": "ee57d4406aedb354aa43f3f088f24039d0def1f4ecb48f8683e5800150bfe5e5",
+    "raw_response": {
+      "label": "Retake Required",
+      "p_value": null,
+      "anomaly_score": null,
+      "product_id": null,
+      "best_similarity": null,
+      "top5": null,
+      "top5_details": null,
+      "quality": {
+        "passed": false,
+        "blur": 90.7482,
+        "glare": 1.5e-05,
+        "mean_lum": 122.5156,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000018",
+    "product_id": "00004-0260",
+    "original_split": "cal",
+    "group_id": "00004-0260_g18",
+    "variant": "edge_chip · severity 1",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000018\\edge_chip_s1.jpg",
+    "image_sha256": "ef26b8e5b0bfdcd018cd03486ab9725e6914267863fd1180a617dd6b79fde00e",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.084291,
+      "anomaly_score": 43.66589,
+      "product_id": "00004-0260",
+      "best_similarity": 0.86759913,
+      "top5": [
+        "00004-0260",
+        "00093-1052",
+        "00093-7327",
+        "59762-4910",
+        "00087-2875"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00004-0260",
+          "similarity": 0.8676
+        },
+        {
+          "product_id": "00093-1052",
+          "similarity": 0.7689
+        },
+        {
+          "product_id": "00093-7327",
+          "similarity": 0.748
+        },
+        {
+          "product_id": "59762-4910",
+          "similarity": 0.7414
+        },
+        {
+          "product_id": "00087-2875",
+          "similarity": 0.741
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 92.7178,
+        "glare": 0.0,
+        "mean_lum": 121.0784,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000004",
+    "product_id": "00002-3239",
+    "original_split": "val",
+    "group_id": "00002-3239_g4",
+    "variant": "original",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000004\\original.jpg",
+    "image_sha256": "f9969ad2872a5c16a97dde6a3debfdaa21909a512a4855e29020f32f55593722",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.203065,
+      "anomaly_score": 41.410786,
+      "product_id": "00002-3239",
+      "best_similarity": 0.87838906,
+      "top5": [
+        "00002-3239",
+        "10337-0815",
+        "00591-0370",
+        "00555-0324",
+        "00002-3229"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-3239",
+          "similarity": 0.8784
+        },
+        {
+          "product_id": "10337-0815",
+          "similarity": 0.8165
+        },
+        {
+          "product_id": "00591-0370",
+          "similarity": 0.8116
+        },
+        {
+          "product_id": "00555-0324",
+          "similarity": 0.8072
+        },
+        {
+          "product_id": "00002-3229",
+          "similarity": 0.8037
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 35.653,
+        "glare": 0.0,
+        "mean_lum": 111.5171,
+        "dark": 0.002972,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000004",
+    "product_id": "00002-3239",
+    "original_split": "val",
+    "group_id": "00002-3239_g4",
+    "variant": "imprint · severity 1",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000004\\imprint_s1.jpg",
+    "image_sha256": "e49fc5b6b759d164b11e0d5d16133abed7efef554e39b78535c0027f0cd7f4a2",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.210728,
+      "anomaly_score": 41.375954,
+      "product_id": "00002-3239",
+      "best_similarity": 0.87810922,
+      "top5": [
+        "00002-3239",
+        "10337-0815",
+        "00591-0370",
+        "00555-0324",
+        "00002-3229"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-3239",
+          "similarity": 0.8781
+        },
+        {
+          "product_id": "10337-0815",
+          "similarity": 0.8148
+        },
+        {
+          "product_id": "00591-0370",
+          "similarity": 0.8097
+        },
+        {
+          "product_id": "00555-0324",
+          "similarity": 0.8054
+        },
+        {
+          "product_id": "00002-3229",
+          "similarity": 0.8028
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 32.2506,
+        "glare": 0.0,
+        "mean_lum": 111.5156,
+        "dark": 0.002972,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000004",
+    "product_id": "00002-3239",
+    "original_split": "val",
+    "group_id": "00002-3239_g4",
+    "variant": "color_gloss · severity 2",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000004\\color_gloss_s2.jpg",
+    "image_sha256": "fa427fc335beec46514cec86d947ea13d2f7b18cc2725f39639a22344fb50d50",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.084291,
+      "anomaly_score": 43.635448,
+      "product_id": "00002-3239",
+      "best_similarity": 0.87949038,
+      "top5": [
+        "00002-3239",
+        "00591-0370",
+        "00555-0324",
+        "10337-0815",
+        "00093-0311"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-3239",
+          "similarity": 0.8795
+        },
+        {
+          "product_id": "00591-0370",
+          "similarity": 0.8153
+        },
+        {
+          "product_id": "00555-0324",
+          "similarity": 0.8101
+        },
+        {
+          "product_id": "10337-0815",
+          "similarity": 0.8079
+        },
+        {
+          "product_id": "00093-0311",
+          "similarity": 0.8018
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 39.3853,
+        "glare": 0.0,
+        "mean_lum": 111.7863,
+        "dark": 0.004688,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000004",
+    "product_id": "00002-3239",
+    "original_split": "val",
+    "group_id": "00002-3239_g4",
+    "variant": "edge_chip · severity 3",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000004\\edge_chip_s3.jpg",
+    "image_sha256": "be2666565e0f35f5ed2a631084fe6c88dfe7242fae9c32327c2e2702bfff365e",
+    "raw_response": {
+      "label": "Unknown Product",
+      "p_value": null,
+      "anomaly_score": null,
+      "product_id": "Unknown Product",
+      "best_similarity": 0.82085502,
+      "top5": [
+        "00002-3239",
+        "00555-0324",
+        "00591-0370",
+        "10337-0815",
+        "00555-0059"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-3239",
+          "similarity": 0.8209
+        },
+        {
+          "product_id": "00555-0324",
+          "similarity": 0.759
+        },
+        {
+          "product_id": "00591-0370",
+          "similarity": 0.7523
+        },
+        {
+          "product_id": "10337-0815",
+          "similarity": 0.7453
+        },
+        {
+          "product_id": "00555-0059",
+          "similarity": 0.74
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 43.1175,
+        "glare": 0.0,
+        "mean_lum": 112.067,
+        "dark": 0.002972,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000013",
+    "product_id": "00002-4771",
+    "original_split": "val",
+    "group_id": "00002-4771_g13",
+    "variant": "original",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000013\\original.jpg",
+    "image_sha256": "4cd081d228ad405a1ee56ac3bf7c135815f1e6927ef419e011e84d507164b555",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.310345,
+      "anomaly_score": 40.720341,
+      "product_id": "00002-4771",
+      "best_similarity": 0.92004871,
+      "top5": [
+        "00002-4771",
+        "68462-0361",
+        "43199-0011",
+        "62037-0524",
+        "00093-7536"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-4771",
+          "similarity": 0.92
+        },
+        {
+          "product_id": "68462-0361",
+          "similarity": 0.8935
+        },
+        {
+          "product_id": "43199-0011",
+          "similarity": 0.8716
+        },
+        {
+          "product_id": "62037-0524",
+          "similarity": 0.8648
+        },
+        {
+          "product_id": "00093-7536",
+          "similarity": 0.863
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 17.3199,
+        "glare": 0.0,
+        "mean_lum": 152.8781,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000013",
+    "product_id": "00002-4771",
+    "original_split": "val",
+    "group_id": "00002-4771_g13",
+    "variant": "imprint · severity 1",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000013\\imprint_s1.jpg",
+    "image_sha256": "0f448192cab03762c0e0ea99e1a716e3df6a4b6c08eab4e5ee6392041c331e49",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.348659,
+      "anomaly_score": 40.657963,
+      "product_id": "00002-4771",
+      "best_similarity": 0.91915256,
+      "top5": [
+        "00002-4771",
+        "68462-0361",
+        "43199-0011",
+        "62037-0524",
+        "53746-0464"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-4771",
+          "similarity": 0.9192
+        },
+        {
+          "product_id": "68462-0361",
+          "similarity": 0.8936
+        },
+        {
+          "product_id": "43199-0011",
+          "similarity": 0.8709
+        },
+        {
+          "product_id": "62037-0524",
+          "similarity": 0.8675
+        },
+        {
+          "product_id": "53746-0464",
+          "similarity": 0.8649
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 17.2312,
+        "glare": 0.0,
+        "mean_lum": 152.8781,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000013",
+    "product_id": "00002-4771",
+    "original_split": "val",
+    "group_id": "00002-4771_g13",
+    "variant": "color_gloss · severity 2",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000013\\color_gloss_s2.jpg",
+    "image_sha256": "96eb14cc811a66202a11c3d6d5cf89dea616c041583e7568c6f440a8b11af791",
+    "raw_response": {
+      "label": "Retake Required",
+      "p_value": null,
+      "anomaly_score": null,
+      "product_id": null,
+      "best_similarity": null,
+      "top5": null,
+      "top5_details": null,
+      "quality": {
+        "passed": false,
+        "blur": 17.4927,
+        "glare": 0.001411,
+        "mean_lum": 152.898,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000013",
+    "product_id": "00002-4771",
+    "original_split": "val",
+    "group_id": "00002-4771_g13",
+    "variant": "edge_chip · severity 3",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000013\\edge_chip_s3.jpg",
+    "image_sha256": "fefe99db84ac61d5850aa3052e14347886e45980434293097e050285e5ba89b0",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.241379,
+      "anomaly_score": 41.103512,
+      "product_id": "00002-4771",
+      "best_similarity": 0.86910343,
+      "top5": [
+        "00002-4771",
+        "68462-0361",
+        "62037-0524",
+        "00472-0850",
+        "68462-0160"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00002-4771",
+          "similarity": 0.8691
+        },
+        {
+          "product_id": "68462-0361",
+          "similarity": 0.8488
+        },
+        {
+          "product_id": "62037-0524",
+          "similarity": 0.846
+        },
+        {
+          "product_id": "00472-0850",
+          "similarity": 0.8376
+        },
+        {
+          "product_id": "68462-0160",
+          "similarity": 0.8351
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 26.0284,
+        "glare": 0.0,
+        "mean_lum": 152.1321,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000010",
+    "product_id": "00002-4462",
+    "original_split": "unknown_val",
+    "group_id": "00002-4462_g10",
+    "variant": "original",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000010\\original.jpg",
+    "image_sha256": "4d212809f0a6dc429ba5e22aaa76e5d635b46349a3db87b51eaa14baf467bd23",
+    "raw_response": {
+      "label": "Unknown Product",
+      "p_value": null,
+      "anomaly_score": null,
+      "product_id": "Unknown Product",
+      "best_similarity": 0.83924538,
+      "top5": [
+        "00087-2875",
+        "00555-0967",
+        "00093-7367",
+        "00591-3776",
+        "59762-5019"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00087-2875",
+          "similarity": 0.8392
+        },
+        {
+          "product_id": "00555-0967",
+          "similarity": 0.8295
+        },
+        {
+          "product_id": "00093-7367",
+          "similarity": 0.8262
+        },
+        {
+          "product_id": "00591-3776",
+          "similarity": 0.8235
+        },
+        {
+          "product_id": "59762-5019",
+          "similarity": 0.8157
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 10.9151,
+        "glare": 0.0,
+        "mean_lum": 126.096,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  },
+  {
+    "image_id": "000038",
+    "product_id": "00007-4640",
+    "original_split": "unknown_val",
+    "group_id": "00007-4640_g38",
+    "variant": "original",
+    "image_path": "D:\\pharmavaluate\\frontend\\showcase\\images\\000038\\original.jpg",
+    "image_sha256": "92ce8f899a15cfa619db8a0d74bd1387b7b8e668060f3fa9165204ec6f88a955",
+    "raw_response": {
+      "label": "Inconclusive",
+      "p_value": 0.122605,
+      "anomaly_score": 42.420975,
+      "product_id": "00591-0676",
+      "best_similarity": 0.91643822,
+      "top5": [
+        "00591-0676",
+        "00007-4642",
+        "00093-0948",
+        "00049-2340",
+        "00378-0277"
+      ],
+      "top5_details": [
+        {
+          "product_id": "00591-0676",
+          "similarity": 0.9164
+        },
+        {
+          "product_id": "00007-4642",
+          "similarity": 0.9093
+        },
+        {
+          "product_id": "00093-0948",
+          "similarity": 0.8904
+        },
+        {
+          "product_id": "00049-2340",
+          "similarity": 0.8766
+        },
+        {
+          "product_id": "00378-0277",
+          "similarity": 0.8705
+        }
+      ],
+      "quality": {
+        "passed": true,
+        "blur": 59.1052,
+        "glare": 0.0,
+        "mean_lum": 122.4825,
+        "dark": 0.0,
+        "thresholds": {
+          "blur_min": 2.1704256134864566,
+          "glare_max": 0.0,
+          "lum_max": 161.04805908265507,
+          "lum_min": 93.39914719920536
+        }
+      },
+      "disclaimer": "screening aid, verify manually"
+    }
+  }
+]

@@ -1,0 +1,13 @@
+seed: 0
+seeds: [0, 1, 2]
+img_size: 256            # crop size for CNN detectors
+dino_size: 448           # AnomalyDINO input (multiple of 14); drop to 336 if VRAM/time is tight
+unknown_fraction: 0.20
+split_fractions: {val: 0.15, cal: 0.25}   # of known-product phone images, by group
+severities: [1, 2, 3]
+tamper_types:
+  pill: [imprint, color_gloss, edge_chip]
+  pack: [font_sub, color_gloss, misregistration, texture]
+alpha_cf: 0.01
+tuning_budget_per_method: 20
+batch_size: {cnn: 16, dino: 8}

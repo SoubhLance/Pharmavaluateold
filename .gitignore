@@ -1,0 +1,72 @@
+# Python environments and bytecode
+venv/
+venv*/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDEs, notebooks, and operating system files
+.idea/
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local datasets and image collections
+data/
+datasets/
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Large offline patch banks, synthetic caches, and intermediate weights
+# Note: Model weights (*.pt, *.ckpt, *.pth, *.onnx) are tracked via Git LFS (.gitattributes)
+backend/banks/*
+!backend/banks/gallery_product_id.pt
+notebooks/pre_trained/
+stale/
+synth/
+lightning_logs/
+wandb/
+mlruns/
+cache/
+artifacts/
+*.safetensors
+*.engine
+
+# Logs
+*.log
+backend/*.log
+
+# Node / frontend build
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/test_fixtures/over_10mb.jpg
+
+# Runtime logs; retain the project change log
+results/logs/
+!results/logs/
+results/logs/*
+!results/logs/CHANGES.md
+
+# Build and test output
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+htmlcov/

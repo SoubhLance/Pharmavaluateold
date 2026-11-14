@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PharmaValuate | Screening aid</title>
+  <style>
+    :root{color-scheme:light;--ink:#172b35;--muted:#647883;--line:#dce5e9;--paper:#f3f7f7;--teal:#146b68;--green:#147348;--amber:#9b6200;--red:#b52d35;--gray:#65737b}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main{width:min(1020px,calc(100% - 32px));margin:44px auto}.head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:24px}
+    h1{font-size:clamp(28px,4vw,40px);line-height:1.1;margin:0 0 10px;letter-spacing:-.03em}.lede{color:var(--muted);margin:0}.banner{background:#e3f0ed;color:#125b58;border:1px solid #c7e0dc;border-radius:999px;padding:8px 14px;font-weight:700;white-space:nowrap}
+    .card{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 32px #1936420a}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.85fr);gap:20px}
+    .drop{display:grid;place-items:center;min-height:270px;border:2px dashed #b9cbcf;border-radius:14px;background:#f9fbfb;text-align:center;padding:18px;transition:.15s}.drop.over{border-color:var(--teal);background:#edf7f5}.drop img{max-width:100%;max-height:310px;border-radius:10px;object-fit:contain}.drop p{color:var(--muted);margin:8px 0}.actions{display:flex;gap:12px;align-items:center;margin-top:16px;flex-wrap:wrap}button,.pick{border:0;border-radius:10px;padding:11px 18px;background:var(--teal);color:#fff;font:700 15px inherit;cursor:pointer}button:disabled{opacity:.55;cursor:wait}.pick{display:inline-block;background:#e8f0f0;color:var(--ink)}input[type=file]{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}.hint{font-size:13px;color:var(--muted)}
+    #error{color:#a32129;margin:14px 0 0}.hidden{display:none!important}.result{margin-top:20px}.label{display:inline-flex;border-radius:999px;padding:7px 13px;font-weight:800;margin:0 0 12px}.green{background:#e1f4e9;color:var(--green)}.amber{background:#fff1cf;color:var(--amber)}.red{background:#fde5e5;color:var(--red)}.gray{background:#e9eef0;color:var(--gray)}
+    .metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.metric{padding:12px;background:#f5f8f8;border-radius:10px}.metric span{display:block;color:var(--muted);font-size:13px}.metric strong{font-size:18px}.quality{margin-top:18px}.quality h2,.top h2{font-size:17px;margin:0 0 10px}.top{margin-top:20px}.top ol{margin:0;padding-left:24px}.top li{padding:4px 0}.sim{color:var(--muted);font-variant-numeric:tabular-nums}.loading{color:var(--teal);font-weight:650}.foot{color:var(--muted);font-size:13px;margin-top:20px}
+    @media(max-width:760px){main{margin:24px auto}.head{display:block}.banner{display:inline-block;margin-top:14px}.layout{grid-template-columns:1fr}.drop{min-height:220px}}
+  </style>
+</head>
+<body>
+<main>
+  <header class="head"><div><h1>Medicine photo screening</h1><p class="lede">Upload a clear pill photo for a frozen-model screening result.</p></div><div class="banner">screening aid, verify manually</div></header>
+  <section class="card">
+    <div class="layout">
+      <div>
+        <div id="drop" class="drop" tabindex="0" role="button" aria-label="Choose or drop an image">
+          <div id="empty"><strong>Drop an image here</strong><p>or choose a file (JPEG, PNG, WebP; up to 10 MB)</p><label class="pick" for="file">Choose image</label></div>
+          <img id="preview" class="hidden" alt="Selected image preview">
+        </div>
+        <input id="file" type="file" accept="image/jpeg,image/png,image/webp">
+        <div class="actions"><button id="screen" disabled>Screen image</button><span id="loading" class="loading hidden" role="status">Screening image…</span></div>
+        <p id="error" class="hidden" role="alert"></p>
+      </div>
+      <div id="result" class="result hidden" aria-live="polite">
+        <div id="label" class="label gray">Result</div>
+        <div class="metrics"><div class="metric"><span>Conformal p-value</span><strong id="pvalue">—</strong></div><div class="metric"><span>Anomaly score</span><strong id="score">—</strong></div></div>
+        <div class="quality"><h2>Image quality</h2><div class="metrics" id="quality"></div></div>
+        <div class="top"><h2>Top product matches</h2><ol id="top5"></ol></div>
+      </div>
+    </div>
+    <p class="foot">This output is a screening aid. Verify manually; it does not establish product authenticity.</p>
+  </section>
+</main>
+<script>
+(()=>{
+  const input=document.querySelector('#file'),drop=document.querySelector('#drop'),preview=document.querySelector('#preview'),empty=document.querySelector('#empty'),button=document.querySelector('#screen'),error=document.querySelector('#error'),loading=document.querySelector('#loading'),result=document.querySelector('#result');let selected=null,objectUrl=null;
+  function setFile(file){error.classList.add('hidden');if(!file)return;if(file.size>10*1024*1024){showError('That file is over 10 MB. Choose a smaller image.');return}if(!file.type.startsWith('image/')){showError('That file is not an image. Choose a JPEG, PNG, or WebP image.');return}selected=file;if(objectUrl)URL.revokeObjectURL(objectUrl);objectUrl=URL.createObjectURL(file);preview.src=objectUrl;preview.classList.remove('hidden');empty.classList.add('hidden');button.disabled=false;result.classList.add('hidden')}
+  function showError(message){error.textContent=message;error.classList.remove('hidden')}
+  input.addEventListener('change',()=>setFile(input.files[0]));drop.addEventListener('click',e=>{if(e.target.tagName!=='LABEL')input.click()});drop.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();input.click()}});for(const name of ['dragenter','dragover'])drop.addEventListener(name,e=>{e.preventDefault();drop.classList.add('over')});for(const name of ['dragleave','drop'])drop.addEventListener(name,e=>{e.preventDefault();drop.classList.remove('over')});drop.addEventListener('drop',e=>setFile(e.dataTransfer.files[0]));
+  const fmt=v=>v===null||v===undefined?'—':typeof v==='number'?v.toFixed(6):String(v);function metric(name,value){return `<div class="metric"><span>${name}</span><strong>${fmt(value)}</strong></div>`}
+  button.addEventListener('click',async()=>{if(!selected)return;error.classList.add('hidden');result.classList.add('hidden');button.disabled=true;loading.classList.remove('hidden');try{const body=new FormData();body.append('file',selected,selected.name);const response=await fetch('/screen',{method:'POST',body});const data=await response.json();if(!response.ok)throw new Error(data.detail||`Request failed (${response.status})`);const styles={'Likely Genuine':'green','Inconclusive':'amber','Likely Counterfeit':'red','Retake Required':'gray','Unknown Product':'gray'};const label=document.querySelector('#label');label.textContent=data.label;label.className='label '+(styles[data.label]||'gray');document.querySelector('#pvalue').textContent=fmt(data.p_value);document.querySelector('#score').textContent=fmt(data.anomaly_score);const q=data.quality||{};document.querySelector('#quality').innerHTML=[metric('Gate passed',q.passed?'Yes':'No'),metric('Blur',q.blur),metric('Glare',q.glare),metric('Mean luminance',q.mean_lum),metric('Dark fraction',q.dark)].join('');const details=data.top5_details||[];document.querySelector('#top5').innerHTML=details.length?details.slice(0,5).map(x=>`<li><span>${escapeHtml(x.product_id)}</span> <span class="sim">similarity ${fmt(x.similarity)}</span></li>`).join(''):'<li>No product matches available</li>';result.classList.remove('hidden')}catch(e){showError(`Could not screen this image: ${e.message}`)}finally{button.disabled=false;loading.classList.add('hidden')}});
+  function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+})();
+</script>
+</body>
+</html>

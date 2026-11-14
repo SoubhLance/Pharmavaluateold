@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PharmaValuate six-medicine showcase</title>
+<style>
+:root{color-scheme:light;--ink:#142b3a;--muted:#63798a;--line:#dce6eb;--teal:#087f83;--wash:#f2f7f8;--amber:#eaa23b}
+*{box-sizing:border-box}body{margin:0;background:#f4f7fa;color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{width:min(1600px,calc(100% - 40px));margin:32px auto 64px}h1{margin:8px 0;font-size:32px}h2{margin:5px 0;font-size:22px}p{margin:4px 0;color:var(--muted)}
+.eyebrow{color:var(--teal);font:700 12px/1.4 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}
+.notice,.summary,.medicine{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 28px #122d3a0a}
+.notice{padding:16px 18px;margin:20px 0;border-left:4px solid var(--amber)}.summary{padding:18px;margin:20px 0;display:flex;flex-wrap:wrap;gap:18px 36px}.summary strong{font-size:20px;display:block}
+.medicine{margin:18px 0;padding:20px}.medicine header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
+.split,.chip{display:inline-block;border-radius:999px;padding:5px 10px;background:#eaf5f5;color:var(--teal);font-size:12px;font-weight:700}
+.chip{background:#f2f5f7;color:#526979}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--wash)}figure img{display:block;width:100%;aspect-ratio:1;object-fit:contain;background:#e9eff2}
+figcaption{padding:10px 12px;font-size:13px;color:var(--muted)}figcaption strong{font-size:14px;color:var(--ink)}details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+summary{cursor:pointer;font-weight:700;color:var(--teal)}code,pre{font:12px/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}pre{max-height:440px;overflow:auto;padding:12px;background:#f2f6f8;border-radius:8px}
+@media(max-width:600px){main{width:calc(100% - 24px);margin-top:18px}h1{font-size:27px}.medicine{padding:14px}.medicine header{align-items:flex-start;flex-direction:column}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}figcaption{padding:8px;font-size:12px}}
+</style></head><body><main>
+<div class="eyebrow">PharmaValuate · Visual screening showcase</div><h1>Six medicine image comparisons</h1>
+<p>Frozen-model screening aid and synthetic stress-test examples. Predictions below are raw API responses; no expected classifications were imposed.</p>
+<section class="notice"><strong>Split integrity:</strong> Calibration, validation, and unknown-validation examples retain their original split labels. These are showcase observations, not independent test results. No test-split image was selected, and source gallery/split files were not modified.</section>
+<section class="summary"><div><strong>6</strong> distinct verified products</div><div><strong>18</strong> raw backend predictions</div><div><strong>3</strong> Unknown Product responses</div><div><strong>cuda</strong> backend device</div></section>
+<article class="medicine"><header><div><span class="split">cal split</span><h2>Product 00002-3250</h2><p>Image 000009 · Group 00002-3250_g9</p></div><span class="chip">4 captured predictions</span></header><div class="gallery"><figure><img src="images/000009/original.jpg" alt="original for product 00002-3250"><figcaption><strong>original</strong><br>Backend: Likely Genuine</figcaption></figure><figure><img src="images/000009/imprint_s2.jpg" alt="imprint · severity 2 for product 00002-3250"><figcaption><strong>imprint · severity 2</strong><br>Backend: Likely Genuine</figcaption></figure><figure><img src="images/000009/color_gloss_s3.jpg" alt="color_gloss · severity 3 for product 00002-3250"><figcaption><strong>color_gloss · severity 3</strong><br>Backend: Likely Genuine</figcaption></figure><figure><img src="images/000009/edge_chip_s1.jpg" alt="edge_chip · severity 1 for product 00002-3250"><figcaption><strong>edge_chip · severity 1</strong><br>Backend: Unknown Product</figcaption></figure></div><details><summary>Manifest provenance and raw API results</summary><p>Source: <code>D:\pharmavaluate\data\raw\c3pi_full\consumer\PillProjectDisc38\images\BLJO0_!9675_3OC0Q5RLFG61YE-E!F.JPG</code></p><p>Original SHA-256: <code>0c0907766f48ffb5851086d109a5ceb1a6a4087a71923bcc98c62acb5a6392e4</code></p><pre>[
+  {
+    &quot;image_id&quot;: &quot;000009&quot;,
+    &quot;product_id&quot;: &quot;00002-3250&quot;,
+    &quot;original_split&quot;: &quot;cal&quot;,
+    &quot;group_id&quot;: &quot;00002-3250_g9&quot;,
+    &quot;variant&quot;: &quot;original&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000009\\original.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;0c0907766f48ffb5851086d109a5ceb1a6a4087a71923bcc98c62acb5a6392e4&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Likely Genuine&quot;,
+      &quot;p_value&quot;: 0.94636,
+      &quot;anomaly_score&quot;: 37.040901,
+      &quot;product_id&quot;: &quot;00002-3250&quot;,
+      &quot;best_similarity&quot;: 0.87698317,
+      &quot;top5&quot;: [
+        &quot;00002-3250&quot;,
+        &quot;00591-0370&quot;,
+        &quot;00378-6201&quot;,
+        &quot;00555-0324&quot;,
+        &quot;00093-3196&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-3250&quot;,
+          &quot;similarity&quot;: 0.877
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-0370&quot;,
+          &quot;similarity&quot;: 0.862
+        },
+        {
+          &quot;product_id&quot;: &quot;00378-6201&quot;,
+          &quot;similarity&quot;: 0.8544
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0324&quot;,
+          &quot;similarity&quot;: 0.8538
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-3196&quot;,
+          &quot;similarity&quot;: 0.847
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 61.6723,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 121.5404,
+        &quot;dark&quot;: 0.002174,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000009&quot;,
+    &quot;product_id&quot;: &quot;00002-3250&quot;,
+    &quot;original_split&quot;: &quot;cal&quot;,
+    &quot;group_id&quot;: &quot;00002-3250_g9&quot;,
+    &quot;variant&quot;: &quot;imprint · severity 2&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000009\\imprint_s2.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;44702bfa33b9b41702ee492698a5f2a3a31ffdf8fc5662ea24ea555ac02a93f2&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Likely Genuine&quot;,
+      &quot;p_value&quot;: 0.896552,
+      &quot;anomaly_score&quot;: 37.568329,
+      &quot;product_id&quot;: &quot;00002-3250&quot;,
+      &quot;best_similarity&quot;: 0.87778711,
+      &quot;top5&quot;: [
+        &quot;00002-3250&quot;,
+        &quot;00591-0370&quot;,
+        &quot;00555-0324&quot;,
+        &quot;00378-6201&quot;,
+        &quot;00093-3196&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-3250&quot;,
+          &quot;similarity&quot;: 0.8778
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-0370&quot;,
+          &quot;similarity&quot;: 0.86
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0324&quot;,
+          &quot;similarity&quot;: 0.8531
+        },
+        {
+          &quot;product_id&quot;: &quot;00378-6201&quot;,
+          &quot;similarity&quot;: 0.8478
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-3196&quot;,
+          &quot;similarity&quot;: 0.8456
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 62.0952,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 121.5436,
+        &quot;dark&quot;: 0.002174,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000009&quot;,
+    &quot;product_id&quot;: &quot;00002-3250&quot;,
+    &quot;original_split&quot;: &quot;cal&quot;,
+    &quot;group_id&quot;: &quot;00002-3250_g9&quot;,
+    &quot;variant&quot;: &quot;color_gloss · severity 3&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000009\\color_gloss_s3.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;5cd5452f2a8dfa9a83d0cfb0c3b16d1ecca9e0a65ede61df3dfb77c8b10230d4&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Likely Genuine&quot;,
+      &quot;p_value&quot;: 0.735632,
+      &quot;anomaly_score&quot;: 38.617805,
+      &quot;product_id&quot;: &quot;00002-3250&quot;,
+      &quot;best_similarity&quot;: 0.8577435,
+      &quot;top5&quot;: [
+        &quot;00002-3250&quot;,
+        &quot;00555-0324&quot;,
+        &quot;00378-6201&quot;,
+        &quot;00591-0370&quot;,
+        &quot;00093-7442&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-3250&quot;,
+          &quot;similarity&quot;: 0.8577
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0324&quot;,
+          &quot;similarity&quot;: 0.8452
+        },
+        {
+          &quot;product_id&quot;: &quot;00378-6201&quot;,
+          &quot;similarity&quot;: 0.8353
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-0370&quot;,
+          &quot;similarity&quot;: 0.832
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-7442&quot;,
+          &quot;similarity&quot;: 0.8272
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 69.3836,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 122.7098,
+        &quot;dark&quot;: 0.001263,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000009&quot;,
+    &quot;product_id&quot;: &quot;00002-3250&quot;,
+    &quot;original_split&quot;: &quot;cal&quot;,
+    &quot;group_id&quot;: &quot;00002-3250_g9&quot;,
+    &quot;variant&quot;: &quot;edge_chip · severity 1&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000009\\edge_chip_s1.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;680d4818f64e0b42e3732203220943af5fab1720b764fb26c05bc9593b1fdbb3&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Unknown Product&quot;,
+      &quot;p_value&quot;: null,
+      &quot;anomaly_score&quot;: null,
+      &quot;product_id&quot;: &quot;Unknown Product&quot;,
+      &quot;best_similarity&quot;: 0.82704347,
+      &quot;top5&quot;: [
+        &quot;00002-3250&quot;,
+        &quot;00591-0370&quot;,
+        &quot;00555-0324&quot;,
+        &quot;00378-6201&quot;,
+        &quot;00093-3196&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-3250&quot;,
+          &quot;similarity&quot;: 0.827
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-0370&quot;,
+          &quot;similarity&quot;: 0.813
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0324&quot;,
+          &quot;similarity&quot;: 0.809
+        },
+        {
+          &quot;product_id&quot;: &quot;00378-6201&quot;,
+          &quot;similarity&quot;: 0.8056
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-3196&quot;,
+          &quot;similarity&quot;: 0.7986
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 63.6549,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 121.6496,
+        &quot;dark&quot;: 0.002174,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  }
+]</pre></details></article>
+<article class="medicine"><header><div><span class="split">cal split</span><h2>Product 00004-0260</h2><p>Image 000018 · Group 00004-0260_g18</p></div><span class="chip">4 captured predictions</span></header><div class="gallery"><figure><img src="images/000018/original.jpg" alt="original for product 00004-0260"><figcaption><strong>original</strong><br>Backend: Likely Genuine</figcaption></figure><figure><img src="images/000018/imprint_s2.jpg" alt="imprint · severity 2 for product 00004-0260"><figcaption><strong>imprint · severity 2</strong><br>Backend: Inconclusive</figcaption></figure><figure><img src="images/000018/color_gloss_s3.jpg" alt="color_gloss · severity 3 for product 00004-0260"><figcaption><strong>color_gloss · severity 3</strong><br>Backend: Retake Required</figcaption></figure><figure><img src="images/000018/edge_chip_s1.jpg" alt="edge_chip · severity 1 for product 00004-0260"><figcaption><strong>edge_chip · severity 1</strong><br>Backend: Inconclusive</figcaption></figure></div><details><summary>Manifest provenance and raw API results</summary><p>Source: <code>D:\pharmavaluate\data\raw\c3pi_full\consumer\PillProjectDisc28\images\BCARPXRGRE00ELICT2B1M2184FVXZXD.JPG</code></p><p>Original SHA-256: <code>1a3d3ed049c90253eb33cd34c0c158faf64122726f16a8de54b22444afa0398e</code></p><pre>[
+  {
+    &quot;image_id&quot;: &quot;000018&quot;,
+    &quot;product_id&quot;: &quot;00004-0260&quot;,
+    &quot;original_split&quot;: &quot;cal&quot;,
+    &quot;group_id&quot;: &quot;00004-0260_g18&quot;,
+    &quot;variant&quot;: &quot;original&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000018\\original.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;1a3d3ed049c90253eb33cd34c0c158faf64122726f16a8de54b22444afa0398e&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Likely Genuine&quot;,
+      &quot;p_value&quot;: 0.697318,
+      &quot;anomaly_score&quot;: 38.903881,
+      &quot;product_id&quot;: &quot;00004-0260&quot;,
+      &quot;best_similarity&quot;: 0.88566327,
+      &quot;top5&quot;: [
+        &quot;00004-0260&quot;,
+        &quot;00093-1052&quot;,
+        &quot;00007-4888&quot;,
+        &quot;00093-7327&quot;,
+        &quot;00087-2875&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00004-0260&quot;,
+          &quot;similarity&quot;: 0.8857
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-1052&quot;,
+          &quot;similarity&quot;: 0.7811
+        },
+        {
+          &quot;product_id&quot;: &quot;00007-4888&quot;,
+          &quot;similarity&quot;: 0.7732
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-7327&quot;,
+          &quot;similarity&quot;: 0.7724
+        },
+        {
+          &quot;product_id&quot;: &quot;00087-2875&quot;,
+          &quot;similarity&quot;: 0.7667
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 92.8896,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 121.1259,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000018&quot;,
+    &quot;product_id&quot;: &quot;00004-0260&quot;,
+    &quot;original_split&quot;: &quot;cal&quot;,
+    &quot;group_id&quot;: &quot;00004-0260_g18&quot;,
+    &quot;variant&quot;: &quot;imprint · severity 2&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000018\\imprint_s2.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;f3a474a5ad7a0c46f51cd65068fe7915f96f30037d7ce2b14ccc6d00bbd10516&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.383142,
+      &quot;anomaly_score&quot;: 40.527851,
+      &quot;product_id&quot;: &quot;00004-0260&quot;,
+      &quot;best_similarity&quot;: 0.88512957,
+      &quot;top5&quot;: [
+        &quot;00004-0260&quot;,
+        &quot;00093-1052&quot;,
+        &quot;00007-4888&quot;,
+        &quot;00093-7327&quot;,
+        &quot;00087-2875&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00004-0260&quot;,
+          &quot;similarity&quot;: 0.8851
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-1052&quot;,
+          &quot;similarity&quot;: 0.7768
+        },
+        {
+          &quot;product_id&quot;: &quot;00007-4888&quot;,
+          &quot;similarity&quot;: 0.7728
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-7327&quot;,
+          &quot;similarity&quot;: 0.7709
+        },
+        {
+          &quot;product_id&quot;: &quot;00087-2875&quot;,
+          &quot;similarity&quot;: 0.7705
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 89.9511,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 121.1239,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000018&quot;,
+    &quot;product_id&quot;: &quot;00004-0260&quot;,
+    &quot;original_split&quot;: &quot;cal&quot;,
+    &quot;group_id&quot;: &quot;00004-0260_g18&quot;,
+    &quot;variant&quot;: &quot;color_gloss · severity 3&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000018\\color_gloss_s3.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;ee57d4406aedb354aa43f3f088f24039d0def1f4ecb48f8683e5800150bfe5e5&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Retake Required&quot;,
+      &quot;p_value&quot;: null,
+      &quot;anomaly_score&quot;: null,
+      &quot;product_id&quot;: null,
+      &quot;best_similarity&quot;: null,
+      &quot;top5&quot;: null,
+      &quot;top5_details&quot;: null,
+      &quot;quality&quot;: {
+        &quot;passed&quot;: false,
+        &quot;blur&quot;: 90.7482,
+        &quot;glare&quot;: 1.5e-05,
+        &quot;mean_lum&quot;: 122.5156,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000018&quot;,
+    &quot;product_id&quot;: &quot;00004-0260&quot;,
+    &quot;original_split&quot;: &quot;cal&quot;,
+    &quot;group_id&quot;: &quot;00004-0260_g18&quot;,
+    &quot;variant&quot;: &quot;edge_chip · severity 1&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000018\\edge_chip_s1.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;ef26b8e5b0bfdcd018cd03486ab9725e6914267863fd1180a617dd6b79fde00e&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.084291,
+      &quot;anomaly_score&quot;: 43.66589,
+      &quot;product_id&quot;: &quot;00004-0260&quot;,
+      &quot;best_similarity&quot;: 0.86759913,
+      &quot;top5&quot;: [
+        &quot;00004-0260&quot;,
+        &quot;00093-1052&quot;,
+        &quot;00093-7327&quot;,
+        &quot;59762-4910&quot;,
+        &quot;00087-2875&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00004-0260&quot;,
+          &quot;similarity&quot;: 0.8676
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-1052&quot;,
+          &quot;similarity&quot;: 0.7689
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-7327&quot;,
+          &quot;similarity&quot;: 0.748
+        },
+        {
+          &quot;product_id&quot;: &quot;59762-4910&quot;,
+          &quot;similarity&quot;: 0.7414
+        },
+        {
+          &quot;product_id&quot;: &quot;00087-2875&quot;,
+          &quot;similarity&quot;: 0.741
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 92.7178,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 121.0784,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  }
+]</pre></details></article>
+<article class="medicine"><header><div><span class="split">val split</span><h2>Product 00002-3239</h2><p>Image 000004 · Group 00002-3239_g4</p></div><span class="chip">4 captured predictions</span></header><div class="gallery"><figure><img src="images/000004/original.jpg" alt="original for product 00002-3239"><figcaption><strong>original</strong><br>Backend: Inconclusive</figcaption></figure><figure><img src="images/000004/imprint_s1.jpg" alt="imprint · severity 1 for product 00002-3239"><figcaption><strong>imprint · severity 1</strong><br>Backend: Inconclusive</figcaption></figure><figure><img src="images/000004/color_gloss_s2.jpg" alt="color_gloss · severity 2 for product 00002-3239"><figcaption><strong>color_gloss · severity 2</strong><br>Backend: Inconclusive</figcaption></figure><figure><img src="images/000004/edge_chip_s3.jpg" alt="edge_chip · severity 3 for product 00002-3239"><figcaption><strong>edge_chip · severity 3</strong><br>Backend: Unknown Product</figcaption></figure></div><details><summary>Manifest provenance and raw API results</summary><p>Source: <code>D:\pharmavaluate\data\raw\c3pi_full\consumer\PillProjectDisc16\images\B0S!Y9V2RF6O-4DKUSZ4U11GDZTAFK7.JPG</code></p><p>Original SHA-256: <code>f9969ad2872a5c16a97dde6a3debfdaa21909a512a4855e29020f32f55593722</code></p><pre>[
+  {
+    &quot;image_id&quot;: &quot;000004&quot;,
+    &quot;product_id&quot;: &quot;00002-3239&quot;,
+    &quot;original_split&quot;: &quot;val&quot;,
+    &quot;group_id&quot;: &quot;00002-3239_g4&quot;,
+    &quot;variant&quot;: &quot;original&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000004\\original.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;f9969ad2872a5c16a97dde6a3debfdaa21909a512a4855e29020f32f55593722&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.203065,
+      &quot;anomaly_score&quot;: 41.410786,
+      &quot;product_id&quot;: &quot;00002-3239&quot;,
+      &quot;best_similarity&quot;: 0.87838906,
+      &quot;top5&quot;: [
+        &quot;00002-3239&quot;,
+        &quot;10337-0815&quot;,
+        &quot;00591-0370&quot;,
+        &quot;00555-0324&quot;,
+        &quot;00002-3229&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-3239&quot;,
+          &quot;similarity&quot;: 0.8784
+        },
+        {
+          &quot;product_id&quot;: &quot;10337-0815&quot;,
+          &quot;similarity&quot;: 0.8165
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-0370&quot;,
+          &quot;similarity&quot;: 0.8116
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0324&quot;,
+          &quot;similarity&quot;: 0.8072
+        },
+        {
+          &quot;product_id&quot;: &quot;00002-3229&quot;,
+          &quot;similarity&quot;: 0.8037
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 35.653,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 111.5171,
+        &quot;dark&quot;: 0.002972,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000004&quot;,
+    &quot;product_id&quot;: &quot;00002-3239&quot;,
+    &quot;original_split&quot;: &quot;val&quot;,
+    &quot;group_id&quot;: &quot;00002-3239_g4&quot;,
+    &quot;variant&quot;: &quot;imprint · severity 1&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000004\\imprint_s1.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;e49fc5b6b759d164b11e0d5d16133abed7efef554e39b78535c0027f0cd7f4a2&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.210728,
+      &quot;anomaly_score&quot;: 41.375954,
+      &quot;product_id&quot;: &quot;00002-3239&quot;,
+      &quot;best_similarity&quot;: 0.87810922,
+      &quot;top5&quot;: [
+        &quot;00002-3239&quot;,
+        &quot;10337-0815&quot;,
+        &quot;00591-0370&quot;,
+        &quot;00555-0324&quot;,
+        &quot;00002-3229&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-3239&quot;,
+          &quot;similarity&quot;: 0.8781
+        },
+        {
+          &quot;product_id&quot;: &quot;10337-0815&quot;,
+          &quot;similarity&quot;: 0.8148
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-0370&quot;,
+          &quot;similarity&quot;: 0.8097
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0324&quot;,
+          &quot;similarity&quot;: 0.8054
+        },
+        {
+          &quot;product_id&quot;: &quot;00002-3229&quot;,
+          &quot;similarity&quot;: 0.8028
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 32.2506,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 111.5156,
+        &quot;dark&quot;: 0.002972,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000004&quot;,
+    &quot;product_id&quot;: &quot;00002-3239&quot;,
+    &quot;original_split&quot;: &quot;val&quot;,
+    &quot;group_id&quot;: &quot;00002-3239_g4&quot;,
+    &quot;variant&quot;: &quot;color_gloss · severity 2&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000004\\color_gloss_s2.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;fa427fc335beec46514cec86d947ea13d2f7b18cc2725f39639a22344fb50d50&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.084291,
+      &quot;anomaly_score&quot;: 43.635448,
+      &quot;product_id&quot;: &quot;00002-3239&quot;,
+      &quot;best_similarity&quot;: 0.87949038,
+      &quot;top5&quot;: [
+        &quot;00002-3239&quot;,
+        &quot;00591-0370&quot;,
+        &quot;00555-0324&quot;,
+        &quot;10337-0815&quot;,
+        &quot;00093-0311&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-3239&quot;,
+          &quot;similarity&quot;: 0.8795
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-0370&quot;,
+          &quot;similarity&quot;: 0.8153
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0324&quot;,
+          &quot;similarity&quot;: 0.8101
+        },
+        {
+          &quot;product_id&quot;: &quot;10337-0815&quot;,
+          &quot;similarity&quot;: 0.8079
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-0311&quot;,
+          &quot;similarity&quot;: 0.8018
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 39.3853,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 111.7863,
+        &quot;dark&quot;: 0.004688,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000004&quot;,
+    &quot;product_id&quot;: &quot;00002-3239&quot;,
+    &quot;original_split&quot;: &quot;val&quot;,
+    &quot;group_id&quot;: &quot;00002-3239_g4&quot;,
+    &quot;variant&quot;: &quot;edge_chip · severity 3&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000004\\edge_chip_s3.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;be2666565e0f35f5ed2a631084fe6c88dfe7242fae9c32327c2e2702bfff365e&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Unknown Product&quot;,
+      &quot;p_value&quot;: null,
+      &quot;anomaly_score&quot;: null,
+      &quot;product_id&quot;: &quot;Unknown Product&quot;,
+      &quot;best_similarity&quot;: 0.82085502,
+      &quot;top5&quot;: [
+        &quot;00002-3239&quot;,
+        &quot;00555-0324&quot;,
+        &quot;00591-0370&quot;,
+        &quot;10337-0815&quot;,
+        &quot;00555-0059&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-3239&quot;,
+          &quot;similarity&quot;: 0.8209
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0324&quot;,
+          &quot;similarity&quot;: 0.759
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-0370&quot;,
+          &quot;similarity&quot;: 0.7523
+        },
+        {
+          &quot;product_id&quot;: &quot;10337-0815&quot;,
+          &quot;similarity&quot;: 0.7453
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0059&quot;,
+          &quot;similarity&quot;: 0.74
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 43.1175,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 112.067,
+        &quot;dark&quot;: 0.002972,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  }
+]</pre></details></article>
+<article class="medicine"><header><div><span class="split">val split</span><h2>Product 00002-4771</h2><p>Image 000013 · Group 00002-4771_g13</p></div><span class="chip">4 captured predictions</span></header><div class="gallery"><figure><img src="images/000013/original.jpg" alt="original for product 00002-4771"><figcaption><strong>original</strong><br>Backend: Inconclusive</figcaption></figure><figure><img src="images/000013/imprint_s1.jpg" alt="imprint · severity 1 for product 00002-4771"><figcaption><strong>imprint · severity 1</strong><br>Backend: Inconclusive</figcaption></figure><figure><img src="images/000013/color_gloss_s2.jpg" alt="color_gloss · severity 2 for product 00002-4771"><figcaption><strong>color_gloss · severity 2</strong><br>Backend: Retake Required</figcaption></figure><figure><img src="images/000013/edge_chip_s3.jpg" alt="edge_chip · severity 3 for product 00002-4771"><figcaption><strong>edge_chip · severity 3</strong><br>Backend: Inconclusive</figcaption></figure></div><details><summary>Manifest provenance and raw API results</summary><p>Source: <code>D:\pharmavaluate\data\raw\c3pi_full\consumer\PillProjectDisc56\images\C1REFD668-ZG3GNGN6P3TPR64T8!022.JPG</code></p><p>Original SHA-256: <code>4cd081d228ad405a1ee56ac3bf7c135815f1e6927ef419e011e84d507164b555</code></p><pre>[
+  {
+    &quot;image_id&quot;: &quot;000013&quot;,
+    &quot;product_id&quot;: &quot;00002-4771&quot;,
+    &quot;original_split&quot;: &quot;val&quot;,
+    &quot;group_id&quot;: &quot;00002-4771_g13&quot;,
+    &quot;variant&quot;: &quot;original&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000013\\original.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;4cd081d228ad405a1ee56ac3bf7c135815f1e6927ef419e011e84d507164b555&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.310345,
+      &quot;anomaly_score&quot;: 40.720341,
+      &quot;product_id&quot;: &quot;00002-4771&quot;,
+      &quot;best_similarity&quot;: 0.92004871,
+      &quot;top5&quot;: [
+        &quot;00002-4771&quot;,
+        &quot;68462-0361&quot;,
+        &quot;43199-0011&quot;,
+        &quot;62037-0524&quot;,
+        &quot;00093-7536&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-4771&quot;,
+          &quot;similarity&quot;: 0.92
+        },
+        {
+          &quot;product_id&quot;: &quot;68462-0361&quot;,
+          &quot;similarity&quot;: 0.8935
+        },
+        {
+          &quot;product_id&quot;: &quot;43199-0011&quot;,
+          &quot;similarity&quot;: 0.8716
+        },
+        {
+          &quot;product_id&quot;: &quot;62037-0524&quot;,
+          &quot;similarity&quot;: 0.8648
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-7536&quot;,
+          &quot;similarity&quot;: 0.863
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 17.3199,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 152.8781,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000013&quot;,
+    &quot;product_id&quot;: &quot;00002-4771&quot;,
+    &quot;original_split&quot;: &quot;val&quot;,
+    &quot;group_id&quot;: &quot;00002-4771_g13&quot;,
+    &quot;variant&quot;: &quot;imprint · severity 1&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000013\\imprint_s1.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;0f448192cab03762c0e0ea99e1a716e3df6a4b6c08eab4e5ee6392041c331e49&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.348659,
+      &quot;anomaly_score&quot;: 40.657963,
+      &quot;product_id&quot;: &quot;00002-4771&quot;,
+      &quot;best_similarity&quot;: 0.91915256,
+      &quot;top5&quot;: [
+        &quot;00002-4771&quot;,
+        &quot;68462-0361&quot;,
+        &quot;43199-0011&quot;,
+        &quot;62037-0524&quot;,
+        &quot;53746-0464&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-4771&quot;,
+          &quot;similarity&quot;: 0.9192
+        },
+        {
+          &quot;product_id&quot;: &quot;68462-0361&quot;,
+          &quot;similarity&quot;: 0.8936
+        },
+        {
+          &quot;product_id&quot;: &quot;43199-0011&quot;,
+          &quot;similarity&quot;: 0.8709
+        },
+        {
+          &quot;product_id&quot;: &quot;62037-0524&quot;,
+          &quot;similarity&quot;: 0.8675
+        },
+        {
+          &quot;product_id&quot;: &quot;53746-0464&quot;,
+          &quot;similarity&quot;: 0.8649
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 17.2312,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 152.8781,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000013&quot;,
+    &quot;product_id&quot;: &quot;00002-4771&quot;,
+    &quot;original_split&quot;: &quot;val&quot;,
+    &quot;group_id&quot;: &quot;00002-4771_g13&quot;,
+    &quot;variant&quot;: &quot;color_gloss · severity 2&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000013\\color_gloss_s2.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;96eb14cc811a66202a11c3d6d5cf89dea616c041583e7568c6f440a8b11af791&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Retake Required&quot;,
+      &quot;p_value&quot;: null,
+      &quot;anomaly_score&quot;: null,
+      &quot;product_id&quot;: null,
+      &quot;best_similarity&quot;: null,
+      &quot;top5&quot;: null,
+      &quot;top5_details&quot;: null,
+      &quot;quality&quot;: {
+        &quot;passed&quot;: false,
+        &quot;blur&quot;: 17.4927,
+        &quot;glare&quot;: 0.001411,
+        &quot;mean_lum&quot;: 152.898,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  },
+  {
+    &quot;image_id&quot;: &quot;000013&quot;,
+    &quot;product_id&quot;: &quot;00002-4771&quot;,
+    &quot;original_split&quot;: &quot;val&quot;,
+    &quot;group_id&quot;: &quot;00002-4771_g13&quot;,
+    &quot;variant&quot;: &quot;edge_chip · severity 3&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000013\\edge_chip_s3.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;fefe99db84ac61d5850aa3052e14347886e45980434293097e050285e5ba89b0&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.241379,
+      &quot;anomaly_score&quot;: 41.103512,
+      &quot;product_id&quot;: &quot;00002-4771&quot;,
+      &quot;best_similarity&quot;: 0.86910343,
+      &quot;top5&quot;: [
+        &quot;00002-4771&quot;,
+        &quot;68462-0361&quot;,
+        &quot;62037-0524&quot;,
+        &quot;00472-0850&quot;,
+        &quot;68462-0160&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00002-4771&quot;,
+          &quot;similarity&quot;: 0.8691
+        },
+        {
+          &quot;product_id&quot;: &quot;68462-0361&quot;,
+          &quot;similarity&quot;: 0.8488
+        },
+        {
+          &quot;product_id&quot;: &quot;62037-0524&quot;,
+          &quot;similarity&quot;: 0.846
+        },
+        {
+          &quot;product_id&quot;: &quot;00472-0850&quot;,
+          &quot;similarity&quot;: 0.8376
+        },
+        {
+          &quot;product_id&quot;: &quot;68462-0160&quot;,
+          &quot;similarity&quot;: 0.8351
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 26.0284,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 152.1321,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  }
+]</pre></details></article>
+<article class="medicine"><header><div><span class="split">unknown_val split</span><h2>Product 00002-4462</h2><p>Image 000010 · Group 00002-4462_g10</p></div><span class="chip">1 captured predictions</span></header><div class="gallery"><figure><img src="images/000010/original.jpg" alt="original for product 00002-4462"><figcaption><strong>original</strong><br>Backend: Unknown Product</figcaption></figure></div><details><summary>Manifest provenance and raw API results</summary><p>Source: <code>D:\pharmavaluate\data\raw\c3pi_full\consumer\PillProjectDisc22\images\B685_ZRKO9IS3_UP!9UZVGXZMI8_NMY.JPG</code></p><p>Original SHA-256: <code>4d212809f0a6dc429ba5e22aaa76e5d635b46349a3db87b51eaa14baf467bd23</code></p><pre>[
+  {
+    &quot;image_id&quot;: &quot;000010&quot;,
+    &quot;product_id&quot;: &quot;00002-4462&quot;,
+    &quot;original_split&quot;: &quot;unknown_val&quot;,
+    &quot;group_id&quot;: &quot;00002-4462_g10&quot;,
+    &quot;variant&quot;: &quot;original&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000010\\original.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;4d212809f0a6dc429ba5e22aaa76e5d635b46349a3db87b51eaa14baf467bd23&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Unknown Product&quot;,
+      &quot;p_value&quot;: null,
+      &quot;anomaly_score&quot;: null,
+      &quot;product_id&quot;: &quot;Unknown Product&quot;,
+      &quot;best_similarity&quot;: 0.83924538,
+      &quot;top5&quot;: [
+        &quot;00087-2875&quot;,
+        &quot;00555-0967&quot;,
+        &quot;00093-7367&quot;,
+        &quot;00591-3776&quot;,
+        &quot;59762-5019&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00087-2875&quot;,
+          &quot;similarity&quot;: 0.8392
+        },
+        {
+          &quot;product_id&quot;: &quot;00555-0967&quot;,
+          &quot;similarity&quot;: 0.8295
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-7367&quot;,
+          &quot;similarity&quot;: 0.8262
+        },
+        {
+          &quot;product_id&quot;: &quot;00591-3776&quot;,
+          &quot;similarity&quot;: 0.8235
+        },
+        {
+          &quot;product_id&quot;: &quot;59762-5019&quot;,
+          &quot;similarity&quot;: 0.8157
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 10.9151,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 126.096,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  }
+]</pre></details></article>
+<article class="medicine"><header><div><span class="split">unknown_val split</span><h2>Product 00007-4640</h2><p>Image 000038 · Group 00007-4640_g38</p></div><span class="chip">1 captured predictions</span></header><div class="gallery"><figure><img src="images/000038/original.jpg" alt="original for product 00007-4640"><figcaption><strong>original</strong><br>Backend: Inconclusive</figcaption></figure></div><details><summary>Manifest provenance and raw API results</summary><p>Source: <code>D:\pharmavaluate\data\raw\c3pi_full\consumer\PillProjectDisc31\images\BEDVF7VELITMEFBR39H3OAOJUOOPZZ1.JPG</code></p><p>Original SHA-256: <code>92ce8f899a15cfa619db8a0d74bd1387b7b8e668060f3fa9165204ec6f88a955</code></p><pre>[
+  {
+    &quot;image_id&quot;: &quot;000038&quot;,
+    &quot;product_id&quot;: &quot;00007-4640&quot;,
+    &quot;original_split&quot;: &quot;unknown_val&quot;,
+    &quot;group_id&quot;: &quot;00007-4640_g38&quot;,
+    &quot;variant&quot;: &quot;original&quot;,
+    &quot;image_path&quot;: &quot;D:\\pharmavaluate\\frontend\\showcase\\images\\000038\\original.jpg&quot;,
+    &quot;image_sha256&quot;: &quot;92ce8f899a15cfa619db8a0d74bd1387b7b8e668060f3fa9165204ec6f88a955&quot;,
+    &quot;raw_response&quot;: {
+      &quot;label&quot;: &quot;Inconclusive&quot;,
+      &quot;p_value&quot;: 0.122605,
+      &quot;anomaly_score&quot;: 42.420975,
+      &quot;product_id&quot;: &quot;00591-0676&quot;,
+      &quot;best_similarity&quot;: 0.91643822,
+      &quot;top5&quot;: [
+        &quot;00591-0676&quot;,
+        &quot;00007-4642&quot;,
+        &quot;00093-0948&quot;,
+        &quot;00049-2340&quot;,
+        &quot;00378-0277&quot;
+      ],
+      &quot;top5_details&quot;: [
+        {
+          &quot;product_id&quot;: &quot;00591-0676&quot;,
+          &quot;similarity&quot;: 0.9164
+        },
+        {
+          &quot;product_id&quot;: &quot;00007-4642&quot;,
+          &quot;similarity&quot;: 0.9093
+        },
+        {
+          &quot;product_id&quot;: &quot;00093-0948&quot;,
+          &quot;similarity&quot;: 0.8904
+        },
+        {
+          &quot;product_id&quot;: &quot;00049-2340&quot;,
+          &quot;similarity&quot;: 0.8766
+        },
+        {
+          &quot;product_id&quot;: &quot;00378-0277&quot;,
+          &quot;similarity&quot;: 0.8705
+        }
+      ],
+      &quot;quality&quot;: {
+        &quot;passed&quot;: true,
+        &quot;blur&quot;: 59.1052,
+        &quot;glare&quot;: 0.0,
+        &quot;mean_lum&quot;: 122.4825,
+        &quot;dark&quot;: 0.0,
+        &quot;thresholds&quot;: {
+          &quot;blur_min&quot;: 2.1704256134864566,
+          &quot;glare_max&quot;: 0.0,
+          &quot;lum_max&quot;: 161.04805908265507,
+          &quot;lum_min&quot;: 93.39914719920536
+        }
+      },
+      &quot;disclaimer&quot;: &quot;screening aid, verify manually&quot;
+    }
+  }
+]</pre></details></article>
+<p class="eyebrow">Screening aid only · Verify manually</p>
+</main></body></html>

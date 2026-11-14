@@ -1,0 +1,13 @@
+{
+ "name": "anomalydino_best",
+ "kind": "dino",
+ "ratio": 1.0,
+ "size": 448,
+ "topfrac": 0.01,
+ "rotations": [
+  0,
+  90,
+  180,
+  270
+ ]
+}

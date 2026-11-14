@@ -1,0 +1,2 @@
+model,stream,seed,steps,train_minutes,val_auroc
+efficientad_s,pill,0,15000,39.58544611930847,0.5452246246509657

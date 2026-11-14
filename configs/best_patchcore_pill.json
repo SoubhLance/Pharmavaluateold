@@ -1,0 +1,15 @@
+{
+ "name": "patchcore_best",
+ "kind": "cnn",
+ "size": 256,
+ "topfrac": 0.0,
+ "rotations": [
+  0,
+  90,
+  180,
+  270
+ ],
+ "out_dim": 512,
+ "backbone": "wide_resnet50_2",
+ "ratio": 0.1
+}

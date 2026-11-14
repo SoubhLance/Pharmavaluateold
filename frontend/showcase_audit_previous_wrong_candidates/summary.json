@@ -1,0 +1,34 @@
+{
+  "health": {
+    "status": "healthy",
+    "device": "cuda",
+    "stream": "pill",
+    "gallery_products": 480,
+    "disclaimer": "screening aid, verify manually"
+  },
+  "candidate_count": 6,
+  "prediction_count": 18,
+  "source_split_counts": {
+    "cal": 2,
+    "unknown_val": 2,
+    "val": 2
+  },
+  "tamper_types": [
+    "imprint",
+    "color_gloss",
+    "edge_chip"
+  ],
+  "configured_severities": [
+    1,
+    2,
+    3
+  ],
+  "label_counts_from_raw_backend_responses": {
+    "Likely Genuine": 4,
+    "Unknown Product": 3,
+    "Inconclusive": 9,
+    "Retake Required": 2
+  },
+  "source_data_modified": false,
+  "test_split_used": false
+}

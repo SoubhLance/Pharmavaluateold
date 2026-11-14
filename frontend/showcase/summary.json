@@ -1,0 +1,60 @@
+{
+  "health": {
+    "status": "healthy",
+    "device": "cuda",
+    "stream": "pill",
+    "gallery_products": 480,
+    "disclaimer": "screening aid, verify manually"
+  },
+  "candidate_count": 6,
+  "prediction_count": 24,
+  "source_split_counts": {
+    "cal": 3,
+    "val": 3
+  },
+  "tamper_types": [
+    "imprint",
+    "color_gloss",
+    "edge_chip"
+  ],
+  "configured_severities": [
+    1,
+    2,
+    3
+  ],
+  "screening_outcome_counts": {
+    "Unknown Product": 14,
+    "Retake Required": 4,
+    "Inconclusive": 4,
+    "Likely Genuine": 2
+  },
+  "identification_status_counts": {
+    "identification_failure": 14,
+    "not_attempted_quality_gate": 4,
+    "match": 4,
+    "mismatch": 2
+  },
+  "identification_mismatches": [
+    {
+      "source_medicine_name": "Metoclopramide 5 mg",
+      "source_ndc": "00093-2204",
+      "source_image_id": "000246",
+      "synthetic_modification_type": "original",
+      "backend_predicted_product_id": "59630-0701",
+      "backend_predicted_product_label": "prednisolone 15 MG Disintegrating Oral Tablet [Orapred]",
+      "screening_outcome": "Inconclusive"
+    },
+    {
+      "source_medicine_name": "Metoclopramide 5 mg",
+      "source_ndc": "00093-2204",
+      "source_image_id": "000246",
+      "synthetic_modification_type": "imprint",
+      "backend_predicted_product_id": "59630-0701",
+      "backend_predicted_product_label": "prednisolone 15 MG Disintegrating Oral Tablet [Orapred]",
+      "screening_outcome": "Inconclusive"
+    }
+  ],
+  "source_data_modified": false,
+  "test_split_used": false,
+  "calibration_validation_are_independent_test_results": false
+}

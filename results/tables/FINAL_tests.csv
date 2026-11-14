@@ -1,0 +1,18 @@
+test,stream,metric,value,ci_lo,ci_hi
+T1,pill,false Likely-Counterfeit rate (target <= 0.01),0.0032310177705977385,0.0,0.00819815316477468
+T1,pill,Inconclusive-or-worse rate on genuine,0.5234248788368336,,
+T3,pill,AUROC color_gloss sev1 (synthetic stress test),0.5127672255595463,,
+T3,pill,AUROC color_gloss sev2 (synthetic stress test),0.7167084201571805,,
+T3,pill,AUROC color_gloss sev3 (synthetic stress test),0.8135342001662563,,
+T3,pill,AUROC edge_chip sev1 (synthetic stress test),0.9325407406245589,,
+T3,pill,AUROC edge_chip sev2 (synthetic stress test),0.9699876092036953,,
+T3,pill,AUROC edge_chip sev3 (synthetic stress test),0.9679473671887804,,
+T3,pill,AUROC imprint sev1 (synthetic stress test),0.4930189724739139,,
+T3,pill,AUROC imprint sev2 (synthetic stress test),0.5545038191884814,,
+T3,pill,AUROC imprint sev3 (synthetic stress test),0.6426823721316873,,
+T3,pill,AUROC all tampers (synthetic stress test),0.733928852080609,0.72373734106884,0.7432603202299582
+T3,pill,TPR@5%FPR,0.3527194399569198,,
+T2,pill,Unknown-product rejection rate,0.5,,
+T2,pill,Unknown products wrongly called Likely Counterfeit,0.0,,
+T6,pill,identification top-1 (test),0.6849757673667205,,
+T6,pill,identification top-5 (test),0.8077544426494345,,

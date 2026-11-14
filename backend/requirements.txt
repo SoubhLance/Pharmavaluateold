@@ -1,0 +1,14 @@
+# Backend runtime versions from D:\pharmavaluate\venv (pip freeze).
+fastapi==0.162.0
+uvicorn==0.54.0
+python-multipart==0.0.33
+pydantic==2.14.2
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+numpy==2.5.4
+pillow==13.0.0
+opencv-python==5.0.0.93
+pyyaml==6.0.3
+requests==2.34.2
+timm==1.0.30
+

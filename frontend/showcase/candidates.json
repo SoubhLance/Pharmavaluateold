@@ -1,0 +1,117 @@
+[
+  {
+    "medicine_name": "Warfarin Sodium 1 mg",
+    "ndc": "00555-0831",
+    "product_id": "00555-0831",
+    "image_id": "000664",
+    "split": "val",
+    "group_id": "00555-0831_g664",
+    "domain": "phone",
+    "stream": "pill",
+    "table_ndc11": [
+      "00555-0831-02"
+    ],
+    "table_name": "Warfarin Sodium 1 MG Oral Tablet",
+    "manifest_source": "D:\\pharmavaluate\\data\\raw\\c3pi_full\\consumer\\PillProjectDisc16\\images\\B0Q5UL-SI8VARKUVAAXQWTW4XZFXNX7.JPG",
+    "clean_source": "D:\\pharmavaluate\\data\\processed\\pill\\clean\\000664.png",
+    "mask_source": "D:\\pharmavaluate\\data\\processed\\pill\\mask\\000664.png",
+    "original_source": "D:\\pharmavaluate\\data\\processed\\pill\\jpg\\000664.jpg",
+    "original_sha256": "c790ad96e5cf7ac74c9ca3dde60bf42b86f513baee9a14c03a695d9f257a1997"
+  },
+  {
+    "medicine_name": "Avandia / Rosiglitazone 8 mg",
+    "ndc": "00029-3160",
+    "product_id": "00029-3160",
+    "image_id": "000070",
+    "split": "cal",
+    "group_id": "00029-3160_g70",
+    "domain": "phone",
+    "stream": "pill",
+    "table_ndc11": [
+      "00029-3160-13"
+    ],
+    "table_name": "rosiglitazone 8 MG Oral Tablet [Avandia]",
+    "manifest_source": "D:\\pharmavaluate\\data\\raw\\c3pi_full\\consumer\\PillProjectDisc41\\images\\BO8Y4-X0IKW-C1!38DIY6VQ_0PUBTFF.JPG",
+    "clean_source": "D:\\pharmavaluate\\data\\processed\\pill\\clean\\000070.png",
+    "mask_source": "D:\\pharmavaluate\\data\\processed\\pill\\mask\\000070.png",
+    "original_source": "D:\\pharmavaluate\\data\\processed\\pill\\jpg\\000070.jpg",
+    "original_sha256": "25d56ab5eb5c00ba02726e2953c91e343312415cdef3931110f58da580755113"
+  },
+  {
+    "medicine_name": "Avodart / Dutasteride 0.5 mg",
+    "ndc": "00173-0712",
+    "product_id": "00173-0712",
+    "image_id": "000516",
+    "split": "cal",
+    "group_id": "00173-0712_g516",
+    "domain": "phone",
+    "stream": "pill",
+    "table_ndc11": [
+      "00173-0712-02"
+    ],
+    "table_name": "Dutasteride 0.5 MG Oral Capsule [Avodart]",
+    "manifest_source": "D:\\pharmavaluate\\data\\raw\\c3pi_full\\consumer\\PillProjectDisc29\\images\\BD3_977R!7OOFUKTK21C9DUVGGP4KE8.JPG",
+    "clean_source": "D:\\pharmavaluate\\data\\processed\\pill\\clean\\000516.png",
+    "mask_source": "D:\\pharmavaluate\\data\\processed\\pill\\mask\\000516.png",
+    "original_source": "D:\\pharmavaluate\\data\\processed\\pill\\jpg\\000516.jpg",
+    "original_sha256": "829d3d02d189739e76cfc50007f893dd1f201fd0e0d2f2d758437681689590c9"
+  },
+  {
+    "medicine_name": "Combivir",
+    "ndc": "49702-0202",
+    "product_id": "49702-0202",
+    "image_id": "000950",
+    "split": "val",
+    "group_id": "49702-0202_g950",
+    "domain": "phone",
+    "stream": "pill",
+    "table_ndc11": [
+      "49702-0202-18"
+    ],
+    "table_name": "Lamivudine 150 MG / Zidovudine 300 MG Oral Tablet [Combivir]",
+    "manifest_source": "D:\\pharmavaluate\\data\\raw\\c3pi_full\\consumer\\PillProjectDisc30\\images\\BDQ8IRL8_YY3EZ0_GNQW5Q2YK1TW7M6.JPG",
+    "clean_source": "D:\\pharmavaluate\\data\\processed\\pill\\clean\\000950.png",
+    "mask_source": "D:\\pharmavaluate\\data\\processed\\pill\\mask\\000950.png",
+    "original_source": "D:\\pharmavaluate\\data\\processed\\pill\\jpg\\000950.jpg",
+    "original_sha256": "8cfcca7798518d7e80e0d8828075665e80fae1c465280f2e2ddabb665b6bd41c"
+  },
+  {
+    "medicine_name": "Dyazide",
+    "ndc": "00007-3650",
+    "product_id": "00007-3650",
+    "image_id": "000032",
+    "split": "val",
+    "group_id": "00007-3650_g32",
+    "domain": "phone",
+    "stream": "pill",
+    "table_ndc11": [
+      "00007-3650-22"
+    ],
+    "table_name": "Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Capsule [Dyazide]",
+    "manifest_source": "D:\\pharmavaluate\\data\\raw\\c3pi_full\\consumer\\PillProjectDisc100\\images\\RR5N7SYYBLYHV!26A0YGVL0OQ9ZIC7.JPG",
+    "clean_source": "D:\\pharmavaluate\\data\\processed\\pill\\clean\\000032.png",
+    "mask_source": "D:\\pharmavaluate\\data\\processed\\pill\\mask\\000032.png",
+    "original_source": "D:\\pharmavaluate\\data\\processed\\pill\\jpg\\000032.jpg",
+    "original_sha256": "4537fd336c5c0cfc8e4b4b0b989d4423c141d54cdbb17d9940ae9c27029b6cb9"
+  },
+  {
+    "medicine_name": "Metoclopramide 5 mg",
+    "ndc": "00093-2204",
+    "product_id": "00093-2204",
+    "image_id": "000246",
+    "split": "cal",
+    "group_id": "00093-2204_g246",
+    "domain": "phone",
+    "stream": "pill",
+    "table_ndc11": [
+      "00093-2204-01",
+      "00093-2204-01"
+    ],
+    "table_name": "Metoclopramide 5 MG Oral Tablet",
+    "manifest_source": "D:\\pharmavaluate\\data\\raw\\c3pi_full\\consumer\\PillProjectDisc1\\images\\!5SWJ7L9W2O7LOWPGLYMC9IFMLNLV7.JPG",
+    "clean_source": "D:\\pharmavaluate\\data\\processed\\pill\\clean\\000246.png",
+    "mask_source": "D:\\pharmavaluate\\data\\processed\\pill\\mask\\000246.png",
+    "original_source": "D:\\pharmavaluate\\data\\processed\\pill\\jpg\\000246.jpg",
+    "original_sha256": "8d0d6d58f78a08c6f285f64f2d8802517bc68102bcc8a28b0639205cb100e722"
+  }
+]
