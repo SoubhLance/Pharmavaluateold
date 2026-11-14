@@ -51,7 +51,6 @@ backend/banks/*
 !backend/banks/gallery_product_id.pt
 notebooks/pre_trained/
 stale/
-synth/
 lightning_logs/
 wandb/
 mlruns/
