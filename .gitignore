@@ -21,8 +21,24 @@ __pycache__/
 Thumbs.db
 Desktop.ini
 
-# Local datasets and image collections
-data/
+# Local datasets and image collections (keep splits and manifest CSVs, ignore heavy images/zips)
+data/*
+!data/splits/
+!data/processed/
+data/processed/*
+!data/processed/pill_raw_manifest.csv
+!data/processed/pill_data_version.txt
+!data/raw/
+data/raw/*
+!data/raw/c3pi_full/
+data/raw/c3pi_full/*
+!data/raw/c3pi_full/consumer_selected_MC_CHALLENGE_V1.0.csv
+!data/raw/c3pi_full/extracted/
+data/raw/c3pi_full/extracted/*
+!data/raw/c3pi_full/extracted/table.csv
+!data/raw/c3pi_full/AAREADME
+!data/raw/c3pi_full/README
+!data/raw/c3pi_full/rximage.MD5
 datasets/
 *.zip
 *.7z
