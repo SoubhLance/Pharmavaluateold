@@ -80,9 +80,16 @@ pip install -r backend/requirements.txt
 
 ---
 
-## 4. Building Reference Banks (Offline)
+## 4. Precomputed Reference Banks & Offline Generation
 
-Before running the API for the first time, build the reference banks:
+The backend uses precomputed patch feature banks for AnomalyDINO nearest-neighbor matching across all 480 known products:
+
+### Option A: Download Precomputed Banks (Recommended)
+1. Download `banks.zip` (~2.76 GB) from [Google Drive Download Link](https://drive.google.com/file/d/1AJ7f2rv9zrWO57fUNIr-WXH61uIqND6u/view?usp=sharing).
+2. Unzip all `.pt` files directly into `backend/banks/`.
+
+### Option B: Build Offline from Dataset
+If you have the genuine training dataset locally, you can build the reference banks:
 
 ```powershell
 python backend/build_banks.py

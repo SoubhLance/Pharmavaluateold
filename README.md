@@ -25,7 +25,13 @@ From the project root, use the project environment and start the local API:
 .\venv\python.exe -m uvicorn backend.app:app --host 127.0.0.1 --port 8000
 ```
 
-Open http://127.0.0.1:8000 for the browser demo. The API docs are at http://127.0.0.1:8000/docs. The demo output is a screening aid; verify manually.
+Open http://127.0.0.1:8000 for the browser UI. The API docs are at http://127.0.0.1:8000/docs. The output is a screening aid; verify manually.
+
+### Precomputed AnomalyDINO Reference Banks (`backend/banks/`)
+To run full anomaly screening across all 480 known medicines without recomputing reference features:
+1. **Download**: Download `banks.zip` (~2.76 GB) from [Google Drive Download Link](https://drive.google.com/file/d/1AJ7f2rv9zrWO57fUNIr-WXH61uIqND6u/view?usp=sharing).
+2. **Extract**: Extract the 480 `.pt` files directly into `backend/banks/`.
+3. *Alternative (offline build)*: If the genuine training images are available locally, you can also regenerate all banks in ~2 minutes with `python backend/build_banks.py`.
 
 ## Data (put under data/raw/)
 - `data/raw/c3pi/`    NLM C3PI/RxImage (start with sampleData.zip, 493 MB; then the 6.8 GB reference zip). Check licence (ODbL).
